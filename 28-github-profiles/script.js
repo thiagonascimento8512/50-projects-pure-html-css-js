@@ -19,7 +19,7 @@ async function getUser(username) {
 
 async function getRepos(username) {
   try {
-    const { data } = await axios(APIURL + username + '/repos')
+    const { data } = await axios(APIURL + username + '/repos?sort=created')
     addReposToCard(data)
   } catch (err) {
     if (err.response.status == 404) {
