@@ -4,10 +4,28 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Notes App</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <button class="add" id="add">
+            <i class="fas fa-plus"></i> Add Note
+        </button>
+
+        <div class="note">
+            <div class="tools">
+                <button class="edit">
+                    <i class="fas fa-edit"></i>
+                </button>
+                <button class="delete">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+            <div class="main hidden"></div>
+            <textarea class="text hidden"></textarea>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js" integrity="sha512-SYfDUYPg5xspsG6OOpXU366G8SZsdHOhqk/icdrYJ2E/WKZxPxze7d2HD3AyXpT7U22PZ5y74xRpqZ6A2bJ+kQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script
             src="https://kit.fontawesome.com/41a910fdb4.js"
             crossorigin="anonymous"
