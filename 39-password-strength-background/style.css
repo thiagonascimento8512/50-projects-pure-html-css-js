@@ -14,3 +14,15 @@ body {
     margin: 0;
     overflow: hidden;
 }
+
+
+.background {
+    background: url('https://images.unsplash.com/photo-1666030910636-6291b581962e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60') no-repeat center center/cover;
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    z-index: -1;
+    filter: blur(20px);
+}
